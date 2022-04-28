@@ -1,0 +1,89 @@
+<div 
+  keyboard-manager
+  role="radiogroup"
+  [attr.aria-labelledby]="id"
+  
+  class="button-group">
+
+  <label 
+    [attr.id]="id"
+    class="label">
+    {{ label }}
+  </label>
+
+  <button 
+    role="radio"
+    [attr.aria-checked]="value === options.YES"
+    [attr.tabindex]="value === options.YES || value === null ? 0 : -1"
+
+    type="button" 
+    class="button button-yes"
+    [class.button-pressed]="value === options.YES" 
+
+    [disabled]="disabled ?? null"
+
+    (click)="activate(options.YES)"
+
+    keyboard-manager-item
+    (focused)="activate(options.YES)">
+    YES
+  </button>
+
+  <button 
+    keyboard-manager-item
+    role="radio"
+    [attr.aria-checked]="value === options.NO"
+    [attr.tabindex]="value === options.NO ? 0: -1"
+
+    type="button" 
+    class="button button-no" 
+    [class.button-pressed]="value === options.NO"
+    
+    [disabled]="disabled ?? null"
+
+    (click)="activate(options.NO)"
+
+    keyboard-manager-item
+    (focused)="activate(options.NO)">
+    NO
+  </button>
+</div>
+<!-- 
+<div 
+  role="radiogroup"
+  class="button-group"
+  
+  [attr.aria-label]="label">
+
+  <label for="">{{ label }}</label>
+
+  <div class="radio">
+    <input 
+    [attr.id]="id + '-yes'"
+    [attr.name]="id"
+    [attr.checked]="value === options.YES"
+
+    type="radio"
+    
+    (change)="activate(options.YES)">
+    <label [attr.for]="id + '-yes'" class="button button-yes">
+      Yes
+    </label>
+  </div>
+
+
+  <div class="radio">
+    <input 
+    [attr.id]="id + '-no'"
+    [attr.name]="id"
+    [attr.checked]="value === options.NO"
+
+    type="radio"
+    
+    (change)="activate(options.NO)">
+    <label [attr.for]="id + '-no'" class="button button-no">
+      No
+    </label>
+  </div>
+
+</div> -->

@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "acessibilidade"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#d55852",
+			"activityBar.activeBorder": "#4bd352",
+			"activityBar.background": "#d55852",
+			"activityBar.foreground": "#e7e7e7",
+			"activityBar.inactiveForeground": "#e7e7e799",
+			"activityBarBadge.background": "#4bd352",
+			"activityBarBadge.foreground": "#15202b",
+			"sash.hoverBorder": "#d55852",
+			"statusBar.background": "#c43730",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#d55852",
+			"statusBarItem.remoteBackground": "#c43730",
+			"statusBarItem.remoteForeground": "#e7e7e7",
+			"titleBar.activeBackground": "#c43730",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.inactiveBackground": "#c4373099",
+			"titleBar.inactiveForeground": "#e7e7e799"
+		},
+		"peacock.color": "#C43730"
+	}
+}

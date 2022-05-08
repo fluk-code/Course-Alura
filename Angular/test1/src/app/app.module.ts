@@ -1,8 +1,10 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-rounting.module';
 
 import { AppComponent } from './app.component';
-import { LikeWidgetModule } from './shared/components/like-widget/like-widget.module';
+import { PhotoListModule } from './components/photo-list/photo-list.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { LikeWidgetModule } from './shared/components/like-widget/like-widget.mo
   ],
   imports: [
     BrowserModule,
-    LikeWidgetModule
+    HttpClientModule,
+    AppRoutingModule,
+    PhotoListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
